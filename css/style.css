@@ -2,15 +2,21 @@ body {
   font-family: sans-serif;
 }
 
+
+
 #main {
 
   margin: 0 auto;
-  display: block;
+  display: inline-block;
 
 }
 
+
+
+
 canvas {
   border: 1px solid #ddd;
+
 }
 
 ul.ranking {
@@ -64,4 +70,84 @@ ul.ranking li span {
 
 ul.ranking li span strong {
   font-size: 20px;
+}
+
+
+
+.icons {
+  display: inline-block;
+  width: 800px;
+  margin: 0;
+  height: 50px;
+  padding: 0;
+  position: relative;
+}
+
+.icons .icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  padding: 0;
+  margin: -1.5px;
+  list-style: none;
+  border: 1px solid black;
+  box-size: border-box;
+  position: absolute;
+  transition: transform 1s ease-out;
+  cursor: pointer;
+}
+
+.icons .icon.death{
+  opacity: 0.4;
+  cursor: default;
+}
+
+.icon.pos-1 {
+  transform: translate(0, 0);
+}
+
+.icon.pos-2 {
+  transform: translate(50px, 0);
+}
+
+.icon.pos-3 {
+  transform: translate(100px, 0);
+}
+
+.icon.pos-4 {
+  transform: translate(150px, 0);
+}
+
+.icon.pos-5 {
+  transform: translate(200px, 0);
+}
+.icon.pos-6 {
+  transform: translate(250px, 0);
+}
+.icon.pos-7 {
+  transform: translate(300px, 0);
+}
+.icon.pos-8 {
+  transform: translate(350px, 0);
+}
+.icon.pos-9 {
+  transform: translate(400px, 0);
+}
+.icon.pos-10 {
+  transform: translate(450px, 0);
+}
+.icon.pos-11 {
+  transform: translate(500px, 0);
+}
+.icon.pos-12 {
+  transform: translate(550px, 0);
+}
+.icon.pos-13 {
+  transform: translate(600px, 0);
+}
+.icon.pos-14 {
+  transform: translate(650px, 0);
+}
+.icon.pos-15 {
+  transform: translate(700px, 0);
 }
