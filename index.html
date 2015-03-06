@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div>
+      <canvas width="800" height="500" id="main" ></canvas>
+    </div>
+    <ul class="ranking">
+
+    </ul>
+
+
+    <script charset="utf-8" src="lib/box2d.js"></script>
+    <script charset="utf-8" src="js/ext/extensions.js"></script>
+
+    <!-- domain -->
+
+    <script charset="utf-8" src="js/domain/Population.js"></script>
+    <script charset="utf-8" src="js/domain/Solver.js"></script>
+    <script charset="utf-8" src="js/domain/GeneticObject.js"></script>
+    <script charset="utf-8" src="js/domain/Car.js"></script>
+    <script charset="utf-8" src="js/domain/Path.js"></script>
+
+    <!-- physics -->
+
+    <script charset="utf-8" src="js/physicModel/camera.js"></script>
+    <script charset="utf-8" src="js/physicModel/Simulator.js"></script>
+    <script charset="utf-8" src="js/physicModel/CarPhysics.js"></script>
+    <script charset="utf-8" src="js/physicModel/PathPhysics.js"></script>
+
+    <!-- UI -->
+    <script charset="utf-8" src="js/ui/drawner.js"></script>
+    <script charset="utf-8" src="js/ui/DrawContext.js"></script>
+    <script charset="utf-8" src="js/ui/RankManager.js"></script>
+
+    <script charset="utf-8" src="js/ui/CarDrawner.js"></script>
+    <script charset="utf-8" src="js/ui/PathDrawner.js"></script>
+
+
+
+
+
+    <script charset="utf-8" src="js/app.js"></script>
+
+    <script charset="utf-8">
+      var app = new App();
+      app.setCanvas(document.querySelector("#main"));
+      app.start();
+
+    </script>
+
+
+  </body>
+</html>

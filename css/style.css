@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+}
+
+#main {
+
+  margin: 0 auto;
+  display: block;
+
+}
+
+canvas {
+  border: 1px solid #ddd;
+}
+
+ul.ranking {
+  max-width: 853px;
+  margin: 0 auto;
+}
+
+ul.ranking li {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+}
+
+ul.ranking li h1 {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  margin: 0;
+  border-radius: 100%;
+  background: rgba(0,0,0,0.1);
+  width: 39px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+ul.ranking li h4 {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  opacity: 0.5;
+  margin: 0;
+
+}
+ul.ranking li h6 {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  opacity: 0.5;
+  margin: 0;
+  font-size: 12px;
+
+}
+
+
+ul.ranking li span {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  opacity: 0.5;
+}
+
+ul.ranking li span strong {
+  font-size: 20px;
+}
